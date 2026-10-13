@@ -6,7 +6,7 @@ A single-screen lead management tool: track leads, log every discussion, and set
 
 ## Demo
 
-Video walkthrough (about 2 min): [Watch the demo](PASTE_VIDEO_LINK_HERE)
+Video walkthrough (about 1 min): [Watch the demo](https://drive.google.com/file/d/1KPoY3_9l48kiR8_Rbx1yBFFWp9rNlpxP/view?usp=sharing)
 
 | Lead list | Lead timeline dialog |
 | --- | --- |
