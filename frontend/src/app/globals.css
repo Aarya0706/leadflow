@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    font-variant-numeric: tabular-nums;
+  }
+  :focus-visible {
+    outline: 2px solid #2a4fd8;
+    outline-offset: 2px;
+  }
+}
+
+/* Dialog open animations: they answer a click, and are switched off for reduced-motion users. */
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes dialog-in {
+  from { opacity: 0; transform: translate(-50%, -48%) scale(0.97); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+.modal-overlay[data-state="open"] { animation: overlay-in 140ms ease-out; }
+.modal-content[data-state="open"] { animation: dialog-in 160ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-overlay[data-state="open"],
+  .modal-content[data-state="open"] { animation: none; }
+}
